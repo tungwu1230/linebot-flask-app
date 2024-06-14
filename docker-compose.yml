@@ -1,0 +1,13 @@
+services:
+  webhook:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+    environment:
+      - LINE_CHANNEL_SECRET=<REPLACE_YOUR_LINE_CHANNEL_SECRET>
+      - LINE_CHANNEL_ACCESS_TOKEN=<REPLACE_YOUR_LINE_CHANNEL_ACCESS_TOKEN>
+    command: gunicorn --bind 0.0.0.0:8000 main:app
+    volumes:
+      - ./app:/app
