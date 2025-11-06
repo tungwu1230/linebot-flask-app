@@ -1,7 +1,0 @@
-{
-    "LINEBOT_NAME": "鸚鵡機器人",
-    "LINEBOT_VERSION": "1.0.0",
-    "LINEBOT_WELCOME_MESSAGES": [
-        "你好，我是鸚鵡機器人"
-    ]
-}

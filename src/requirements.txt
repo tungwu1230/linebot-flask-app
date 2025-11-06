@@ -1,0 +1,5 @@
+# LINE Bot 依賴套件
+flask==3.0.1
+gunicorn==21.2.0
+line-bot-sdk==3.10.1
+PyYAML==6.0.1

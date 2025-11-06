@@ -1,0 +1,29 @@
+# LINE Bot 配置文件
+# 請依照你的機器人需求修改以下設定
+
+# 機器人基本資訊
+bot:
+  name: "鸚鵡機器人"
+  version: "1.0.0"
+  description: "一個簡單的 LINE Echo Bot"
+
+# 歡迎訊息設定
+welcome:
+  enabled: true
+  messages:
+    - "你好，我是鸚鵡機器人"
+    - "我會重複你說的話"
+
+# 伺服器設定
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+# LINE API 設定
+# 注意：請勿在此文件中直接填寫敏感資訊
+# Channel Secret 和 Access Token 請透過環境變數設定
+line:
+  # LINE_CHANNEL_SECRET=your_channel_secret
+  # LINE_CHANNEL_ACCESS_TOKEN=your_channel_access_token
+  webhook_path: "/callback"
